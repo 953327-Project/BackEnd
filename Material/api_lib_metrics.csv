@@ -1,5 +1,5 @@
-﻿project_name,kloc,bugs,security_hotspot,density%,dupe_loc,cog_complexity,cyclo_complexity,k_comment_line,comment_per_loc
-django,114.4,41,73,0.3,434,25559,24152,31,0.27
-flask,3.9,0,1,2,178,776,861,3.2,0.85
-fastapi,6.9,1,0,25.9,2045,924,783,0.39,0.06
-sanic,14.4,5,7,0.7,172,2886,2682,5.2,0.37
+﻿project_name,kloc,bugs,security_hotspot,density%,dupe_loc,cog_complexity,cyclo_complexity,k_comment_line,comment_per_loc,number_of_files,comment_coverage%,Issues,critical_issue%
+django,114.4,41,73,0.3,434,25559,24152,31,0.27,1072,20,1212,39.1
+flask,3.9,0,1,2,178,776,861,3.2,0.85,24,49.3,26,46.1
+fastapi,6.9,1,0,25.9,2045,924,783,0.39,0.06,43,5.4,126,15
+sanic,14.4,5,7,0.7,172,2886,2682,5.2,0.37,117,29.6,129,48.8
