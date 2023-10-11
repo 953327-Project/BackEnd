@@ -13,3 +13,6 @@ http://localhost:5000/get_csv_as_df
 
 ## Patch note version 0.2
 1. Add more columns in the csv files to get more metrics to comparison.
+
+## Patch note version 0.3
+1. Add activeness of each project's author and number of test classes and kloc in the test folder.
