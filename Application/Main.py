@@ -5,10 +5,20 @@ import pandas as pd
 # Create a Flask app instance
 app = Flask(__name__)
 
-# Sample CSV data (you can replace this with your own CSV file)
 csv_data = "../Material/api_lib_metrics.csv"
+df = pd.read_csv(csv_data)
 
-# Define a route to return CSV data as a DataFrame in JSON
+# Endpoint to get sorted data for a specific topic
+@app.route('/sorted/<topic>', methods=['GET'])
+def get_sorted_data(topic):
+    if topic not in df.columns:
+        return jsonify({"error": "Invalid topic"}), 400
+
+    sorted_data = df[['project_name', topic]].sort_values(by=topic, ascending=False).to_dict('records')
+    return jsonify(sorted_data)
+
+
+
 @app.route('/get_csv_as_df', methods=['GET'])
 def get_csv_as_df():
     # Convert CSV data to a DataFram
