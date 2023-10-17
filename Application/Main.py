@@ -1,10 +1,10 @@
 # Import necessary libraries
 from flask import Flask, jsonify, make_response
 import pandas as pd
-
+from flask_cors import CORS
 # Create a Flask app instance
 app = Flask(__name__)
-
+CORS(app)
 csv_metrics_data = "../Material/api_lib_metrics.csv"
 csv_scores_data = "../Material/score_metrics.csv"
 df_metrics = pd.read_csv(csv_metrics_data)
