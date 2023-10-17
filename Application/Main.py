@@ -33,7 +33,7 @@ def get_csv_as_df():
 
     return response
 @app.route('/get_score_csv', methods=['GET'])
-def get_csv_as_df():
+def get_score_csv():
     # Convert CSV data to a DataFram
     df = pd.read_csv(metric_csv_data)
     # Convert the DataFrame to JSON format
