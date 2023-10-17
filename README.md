@@ -20,6 +20,7 @@ http://localhost:5000/get_csv_as_df
 ## Patch note version 0.4
 1. Add mathematic formula to calculate each metric from the project's scoring matrix.
 
-## Patch note version 0.5 23798e1
+## Patch note version 0.5 [23798e1](https://github.com/953327-Project/BackEnd/commit/23798e1055871504d46bad306b479f4f602d8c8e)
 1. Changed variable "csv_data" to "Metrics_csv", variable "metric_csv_data" to "Scores_csv", variable "df" to "df_Metrics" and add "df_Scores" in Main.py line 8-11, 16, 19, 35 and 47
 2. Added new sorted Endpoint for calling data from score_metrics.csv in Main.py line 23-29
+
