@@ -1,0 +1,5 @@
+project_name,code_comprehen,doc_comprehen,code_reusability,built_reusability,test_quality,team_activeness
+django,0.123,0.4192,0.022,0.147,3.2,3835.11
+flask,0.588,0.2223,0.341,0.18,3.45,704.21
+fastapi,0.04,0.0002,0.257,0.256,7.05,1540.96
+sanic,0.214,0.2487,0.119,0.172,3.06,725.9
