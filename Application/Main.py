@@ -6,6 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 csv_data = "../Material/api_lib_metrics.csv"
+metric_csv_data = "../Material/score_metrics.csv"
 df = pd.read_csv(csv_data)
 
 # Endpoint to get sorted data for a specific topic
@@ -23,6 +24,18 @@ def get_sorted_data(topic):
 def get_csv_as_df():
     # Convert CSV data to a DataFram
     df = pd.read_csv(csv_data)
+    # Convert the DataFrame to JSON format
+    json_data = df.to_json(orient='records')
+    response = make_response(json_data)
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Credentials'] = 'true'
+    print(json_data)
+
+    return response
+@app.route('/get_score_csv', methods=['GET'])
+def get_csv_as_df():
+    # Convert CSV data to a DataFram
+    df = pd.read_csv(metric_csv_data)
     # Convert the DataFrame to JSON format
     json_data = df.to_json(orient='records')
     response = make_response(json_data)
