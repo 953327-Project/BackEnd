@@ -16,3 +16,6 @@ http://localhost:5000/get_csv_as_df
 
 ## Patch note version 0.3
 1. Add activeness of each project's author and number of test classes and kloc in the test folder.
+
+## Patch note version 0.4
+1. Add mathematic formula to calculate each metric from the project's scoring matrix.
